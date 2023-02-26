@@ -4,6 +4,8 @@ Install allure https://docs.qameta.io/allure/.
 
 ### Test Runner
 
-npm playwright test  
-allure generate my-allure-results -o allure-report --clean
-allure open allure-report
+npx playwright test --trace on
+npx playwright show-report
+
+allure generate ./allure-results --clean
+allure open ./allure-report
